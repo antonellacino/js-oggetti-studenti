@@ -1,0 +1,94 @@
+/* Curo per bene l’output dell’elenco studenti, creando un layout carino;
+il “blocchetto studente” in pagina, sarà uguale per tutti, quindi potrei usare handlebars per gestire i blocchetti; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #61CE4E;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    border: 2px solid #1552ec;
+    margin-top: 20px;
+    font-size: large;
+    border-radius: 5px;
+    background-image: url('../sfondo.jpg');
+    color: white;
+}
+
+.create {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #61CE4E;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+
+.studentList {
+    width: 30%;
+    border: 1px solid gray;
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: #1B3C59;
+}
+
+.student {
+    width: 30%;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: #1B3C59;
+}
+
+.insertNew {
+    width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 3px 20px;
+    background-color: white;
+    color: #1B3C59;
+    text-align: center;
+}
+
+.insertNew input {
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.close {}
+
+
+/* 
+#61CE4E verde
+
+1B3C59 blu scuro */

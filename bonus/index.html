@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <title>js-oggetti-studenti</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Boolean Classe 11</h1>
+        <button class="create">Inserisci nuovo studente</button>
+        <div class="insertNew hidden">
+            <div class="flex">
+                <p> Nome <input type="text" id="name"></p>
+                <p>Cognome <input type="text" id="surname"></p>
+                <p>Anni <input type="text" id="anni"></p>
+            </div>
+            <button id="insert" class="create">Inserisci</button>
+        </div>
+        <div class="flex">
+            <ul class="studentList">
+
+            </ul>
+        </div>
+
+        <script id="entry-template" type="text/x-handlebars-template">
+            <div class="student">
+                <p>Nome : {{nameStudent}}</p>
+                <p>Cognome: {{surnameStudent}}</p>
+                <p>Anni: {{yearsStudent}}</p>
+                <button id="close" class="create">Chiudi</button>
+            </div>
+        </script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>
